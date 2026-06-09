@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { companyInfo } from "../data/companyInfo";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <h1 className="text-3xl font-bold text-orange-500">
-          Sejudam
+          {companyInfo.name}
         </h1>
 
         {/* Desktop Menu */}
