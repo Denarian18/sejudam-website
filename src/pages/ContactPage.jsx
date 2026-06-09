@@ -1,6 +1,23 @@
+import { useState } from "react";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Message sent! We will contact you soon.");
+    setForm({ name: "", email: "", message: "" });
+  };
+
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center px-6">
 
@@ -10,28 +27,33 @@ export default function ContactPage() {
           Contact Sejudam
         </h1>
 
-        <p className="text-center text-gray-600 mb-8">
-          Get in touch for logistics services or spare parts orders.
-        </p>
-
-        {/* Simple form UI */}
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
 
           <input
-            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
             placeholder="Your Name"
             className="w-full border p-3 rounded-lg"
+            required
           />
 
           <input
-            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
             placeholder="Your Email"
             className="w-full border p-3 rounded-lg"
+            required
           />
 
           <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
             placeholder="Your Message"
             className="w-full border p-3 rounded-lg h-32"
+            required
           />
 
           <button
@@ -42,7 +64,6 @@ export default function ContactPage() {
           </button>
         </form>
 
-        {/* Quick contact */}
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
 
           <a

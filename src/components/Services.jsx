@@ -12,7 +12,7 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-8">
 
           {/* Logistics */}
-          <div className="p-8 rounded-xl shadow-lg border hover:shadow-2xl transition">
+          <div className="p-8 rounded-xl shadow-lg border hover:shadow-2xl hover:-translate-y-1 transition duration-300 bg-white">
             <FaTruck className="text-4xl text-orange-500 mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Logistics Delivery</h3>
             <p className="text-gray-600">
@@ -22,7 +22,7 @@ export default function Services() {
           </div>
 
           {/* Warehousing */}
-          <div className="p-8 rounded-xl shadow-lg border hover:shadow-2xl transition">
+          <div className="p-8 rounded-xl shadow-lg border hover:shadow-2xl hover:-translate-y-1 transition duration-300 bg-white">
             <FaWarehouse className="text-4xl text-orange-500 mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Warehousing</h3>
             <p className="text-gray-600">
@@ -31,7 +31,7 @@ export default function Services() {
           </div>
 
           {/* Spare Parts */}
-          <div className="p-8 rounded-xl shadow-lg border hover:shadow-2xl transition">
+          <div className="p-8 rounded-xl shadow-lg border hover:shadow-2xl hover:-translate-y-1 transition duration-300 bg-white">
             <FaTools className="text-4xl text-orange-500 mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Vehicle Spare Parts</h3>
             <p className="text-gray-600">

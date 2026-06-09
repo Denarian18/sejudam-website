@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import SpareParts from "../components/SpareParts";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -29,12 +30,9 @@ export default function Home() {
           Contact Sejudam today for reliable service.
         </p>
 
-        <a
-          href="/contact"
-          className="bg-orange-500 px-6 py-3 rounded-lg hover:bg-orange-600"
-        >
+       <Link to="/contact" className="bg-orange-500 px-6 py-3 rounded-lg hover:bg-orange-600" >
           Get in Touch
-        </a>
+        </Link>
       </section>
     </>
   );
