@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
    <section className="bg-slate-900 text-white min-h-[90vh] flex items-center px-6">
@@ -22,13 +24,13 @@ export default function Hero() {
 
         <div className="mt-8 flex gap-4">
 
-          <button className="bg-orange-500 px-6 py-3 rounded-lg hover:bg-orange-600">
+          <Link to="/services" className="bg-orange-500 px-6 py-3 rounded-lg hover:bg-orange-600">
             Explore Services
-          </button>
+          </Link>
 
-          <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black">
+          <Link to="/contact" className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black">
             Contact Us
-          </button>
+          </Link>
 
         </div>
 
