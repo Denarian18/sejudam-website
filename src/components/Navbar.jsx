@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { companyInfo } from "../data/companyInfo";
-import herologo from "../assets/hero-logo.jpg";
+import herologo from "../assets/hero-logo.png";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -13,11 +13,13 @@ export default function Navbar() {
     <nav className="bg-slate-950 text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        {/* Logo */}
-        <img src={herologo} alt="Company Logo" className="h-12 w-12" />
-        <h1 className="text-3xl font-bold text-orange-500">
-          {companyInfo.name}
-        </h1>
+       <div className="flex items-center gap-3">
+  <img src={herologo} alt="Company Logo" className="h-10 w-10 object-contain" />
+
+  <h1 className="text-2xl font-bold text-orange-500 leading-none">
+    {companyInfo.name}
+  </h1>
+</div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 items-center">
