@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { companyInfo } from "../data/companyInfo";
-
+import herologo from "../assets/hero-logo.jpg";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -14,6 +14,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
         {/* Logo */}
+        <img src={herologo} alt="Company Logo" className="h-12 w-12" />
         <h1 className="text-3xl font-bold text-orange-500">
           {companyInfo.name}
         </h1>
