@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Changa+One&family=Cinzel&family=Roboto+Mono&family=Rowdies&family=Black+Ops+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 html {
   scroll-behavior: smooth;
@@ -8,5 +10,5 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }

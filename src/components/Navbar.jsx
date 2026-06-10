@@ -16,7 +16,7 @@ export default function Navbar() {
        <div className="flex items-center gap-3">
   <img src={herologo} alt="Company Logo" className="h-10 w-10 object-contain" />
 
-  <h1 className="text-2xl font-bold text-orange-500 leading-none">
+  <h1 className="text-2xl font-bold font-BlackOpsOne text-orange-500 leading-none">
     {companyInfo.name}
   </h1>
 </div>
